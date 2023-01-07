@@ -9,6 +9,7 @@ import Clock from "./chapter_04/Clock";
 import CommentList from "./chapter_05/CommentList";
 import NotificationList from "./chapter_06/NotificationList";
 
+// chapter 06
 ReactDOM.render(
     <React.StrictMode>
         <NotificationList />
@@ -16,6 +17,7 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
+// chapter 05
 // ReactDOM.render(
 //     <React.StrictMode>
 //         <CommentList />
