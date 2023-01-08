@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 // import NotificationList from "./chapter_06/NotificationList";
 import Accommodate from "./chapter_07/Accommodate";
 
-// chapter 06
+// chapter 07
 ReactDOM.render(
     <React.StrictMode>
         <Accommodate />
