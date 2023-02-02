@@ -1,0 +1,19 @@
+chapter 09 Conditional Rendering
+
+- Condition = 조건
+- Conditional Rendering = 조건부 렌더링 (조건에 따라 렌더링이 달라지는 것)
+
+- Element Variables : Element를 변수처럼 저장해서 사용하는 방법
+
+- Inline Condition
+    - 조건문을 코드 안에 집어넣는 것
+    - Inline If
+        - && 연산자 사용
+            - true && expression => expression
+            - false && expression => false
+    - Inline if else
+        - ? 연산자 사용
+            - condition ? true : false
+
+- Component 렌더링 막기
+    - null을 리턴하면 렌더링 하지 않음!!
