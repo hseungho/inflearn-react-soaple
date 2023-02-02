@@ -8,15 +8,24 @@ import reportWebVitals from './reportWebVitals';
 // import Clock from "./chapter_04/Clock";
 // import CommentList from "./chapter_05/CommentList";
 // import NotificationList from "./chapter_06/NotificationList";
-import Accommodate from "./chapter_07/Accommodate";
+// import Accommodate from "./chapter_07/Accommodate";
+import ConfirmButton from "./chapter_08/ConfirmButton";
 
-// chapter 07
+// chapter 08
 ReactDOM.render(
     <React.StrictMode>
-        <Accommodate />
+        <ConfirmButton />
     </React.StrictMode>,
     document.getElementById('root')
 );
+
+// chapter 07
+// ReactDOM.render(
+//     <React.StrictMode>
+//         <Accommodate />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+// );
 
 // chapter 06
 // ReactDOM.render(

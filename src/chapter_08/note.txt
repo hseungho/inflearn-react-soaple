@@ -1,0 +1,19 @@
+chapter 08 Event
+
+-Event : 특정 사건
+	-e.g., 버튼 클릭 이벤트, etc.
+
+-DOM의 Event
+	<button onclick="activate()">
+-React의 Event
+	<button onClick={activate}>
+
+-Event Handler (Event Listener)
+    -Class Component
+        -Event 함수 정의
+        -Component constructor 내에서 bind() 적용
+    -Function Component
+        -case 1. Event 함수 정의 -> function f() { }
+        -case 2. arrow function으로 정의 -> const f = () => { }
+
+-Event Handler에게 Argument 전달
