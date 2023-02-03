@@ -1,0 +1,28 @@
+chapter 11 Forms
+
+- Form
+    - 사용자로부터 입력을 받기 위해 사용하는 양식
+
+- Controlled Components
+    - 값이 리액트의 통제르 받는 input form element
+    - 모든 데이터를 state에서 관리
+    - 사용자의 입력을 직접적으로 제어할 수 있음
+
+- Form
+    - textarea 태그
+        - 여러 줄에 걸쳐 긴 텍스트를 입력받기 위한 HTML 태그
+        - value={} 안에 텍스트를 초기화할 수 있다.
+        - onChange={} 를 통해 값이 변경되면 state를 변경하는 함수를 정의, 사용할 수 있다.
+    - select 태그
+        - Drop-down 목록을 보여주기 위한 HTML 태그
+        - value={} 안에 초기 리스트 아이템을 초기화할 수 있다.
+        - multiple={true} value={['B', 'C']} 속성을 통해 여러 개의 옵션 선택 가능!
+        - onChange={} 를 통해 값이 변경되면 state를 변경하는 함수를 정의, 사용할 수 있다.
+    - file input 태그
+        - 디바이스의 저장 장치로부터 하나 또는 여러 개의 파일을 선택할 수 있게 해주는 HTML 태그
+        - <input type="file">
+        - Uncontrolled Component
+    - Multiple inputs
+        - 여러 개의 state를 선언하여 각각의 입력에 대해 사용
+    - Input Null Value
+        - value는 넣되 사용자가 자유롭게 입력할 수 있게 해주는 방법
