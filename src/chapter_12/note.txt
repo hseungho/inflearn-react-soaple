@@ -1,0 +1,11 @@
+chapter 12 Lifting State Up
+
+- shared state
+    - 공통된 부모의 state를 자식 컴포넌트들이 공유
+    - State에 있는 데이터를 여러 개의 하위 컴포넌트에서 공통적으로 사용하는 경우
+
+- 서로 다른 하위 컴포넌트에서 공유하는 state 값 동기화
+    - 하위 컴포넌트의 state로 전달하는 매개체를 동기화할 수 있는 함수를 정의하여 리턴값으로 제공한다.
+
+- Lifting State Up
+    - 하위 컴포넌트의 state를 공통 상위 컴포넌트로 올리는 것
