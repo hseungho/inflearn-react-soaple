@@ -10,16 +10,24 @@ import reportWebVitals from './reportWebVitals';
 // import NotificationList from "./chapter_06/NotificationList";
 // import Accommodate from "./chapter_07/Accommodate";
 // import ConfirmButton from "./chapter_08/ConfirmButton";
-import LandingPage from "./chapter_09/LandingPage";
+// import LandingPage from "./chapter_09/LandingPage";
+import AttendanceBook from "./chapter_10/AttendanceBook";
 
-// chapter 09
+// chapter 10
 ReactDOM.render(
     <React.StrictMode>
-        <LandingPage />
+        <AttendanceBook />
     </React.StrictMode>,
     document.getElementById('root')
 );
 
+// chapter 09
+// ReactDOM.render(
+//     <React.StrictMode>
+//         <LandingPage />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+// );
 
 // chapter 08
 // ReactDOM.render(
