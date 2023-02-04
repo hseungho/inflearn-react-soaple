@@ -15,14 +15,23 @@ import reportWebVitals from './reportWebVitals';
 // import SignUp from "./chapter_11/SignUp";
 // import Calculator from "./chapter_12/Calculator";
 import ProfileCard from "./chapter_13/ProfileCard";
+import DarkOrLight from "./chapter_14/DarkOrLight";
 
-// chapter 13
+// chapter 14
 ReactDOM.render(
     <React.StrictMode>
-        <ProfileCard />
+        <DarkOrLight />
     </React.StrictMode>,
     document.getElementById('root')
 );
+
+// chapter 13
+// ReactDOM.render(
+//     <React.StrictMode>
+//         <ProfileCard />
+//     </React.StrictMode>,
+//     document.getElementById('root')
+// );
 
 // chapter 12
 // ReactDOM.render(

@@ -1,0 +1,27 @@
+chapter 14 : Context
+
+- Context
+    - 기존에는 컴포넌트의 props를 통해 부모에서 자식으로 단방향으로 데이터 전달
+    - 공통적으로 사용되는 데이터들에 대하여 Context가 곧바로 해당 컴포넌트에게 전달하는 것이 Context
+    - 언제 Context를 사용해야 할까?
+        - 여러 개의 컴포넌트들이 접근해야 하는 데이터
+            - e.g., 로그인 여부, 로그인 정보, UI 테마, 현재 언어, etc.
+- Context API
+    - const MyContext = React.createContext(기본값);
+    - Context.Provider
+        - <ValueContext.Provider value = {value}> <Component /> </ ValueContext.Provider>
+        - 주의해야 할 사항
+            - Provider 컴포넌트가 재렌더링될 때마다 모든 하위 consumer 컴포넌트가 재렌더링 됨.
+            - state를 사용하여 불필요한 재렌더링을 막음.
+                - const [value, setValue] = useState({ something: 'something' })
+                - return (
+                    <MyContext.Provider value = {value}>
+                        <Toolbar />
+                    </ MyContext.Provider>
+    - Context.Consumer
+        - <ValueContext.Consumer> {value => <Component attribute..={value} /> } </ ValueContext.Consumer>
+            - context 값에 따라서 컴포넌트들을 렌더링
+    - 여러 개의 Context 사용
+        - Provider 및 Consumer 태그를 중첩하여 사용
+    - useContext()
+        - const value = useContext(MyContext)
