@@ -1,0 +1,110 @@
+chapter 15 Styling
+
+- CSS; Cascading Style Sheets
+    - Selector
+        - Style이 어떤 element 에 적용할지를 선택할 수 있게 하는 선택자
+    - Selector의 유형
+        - Element Selector : HTML 태그 이름을 선택자로 사용
+        - ID Selector : element의 id를 선택자로 사용 (각 element의 id는 고유해야 한다) -> '#'
+        - Class Selector : 특정 element의 그룹을 가리키는 class를 선택자로 사용 (element selector와 같이 사용 가능) -> '.'
+        - Universal Selector : 전체 element에 적용하기 위한 선택자 -> '*'
+        - Grouping Selector : 여러 개의 선택자를 그룹으로 하여 적용하기 위한 선택자
+        - Element의 상태와 관련된 selector
+            - :hover : 마우스 커서가 element 위에 올라왔을 때
+            - :active : 주로 <a> 태그(link)에 사용되는데, element가 클릭됐을 때
+            - :focus : 주로 <input> 태그에 사용되는데, element가 초점을 갖고 있을 때
+            - :checked : radio button 이나 checkbox 같은 유형의 <input> 태그가 체크되어 있을 때
+            - :first-child, :last-child : 상위 element를 기준으로 각각 첫번쨰 child, 마지막 child일 때
+
+- 레이아웃과 관련된 속성
+    - Layout
+        - display
+            - display: none;
+                - element 를 화면에서 숨기기 위해 사용
+            - display: block;
+                - 블록 단위로 element 를 배치
+            - display: inline;
+                - element 를 라인 안에 넣는 것
+            - display: flex;
+                - element 를 블록 레벨의 flex container 로 표시
+                - container 이기 때문에, 내부에 다른 element 들을 포함
+        - visibility
+            - visibility: visible;
+                - 화면에 element 를 보이게 하는 것
+            - visibility: hidden;
+                - 화면에서 안 보이게 감추는 것
+                - element 를 안 보이게만 하는 것이고, 화면에서의 영역은 그대로 차지
+        - position
+            - position: static;
+                - 기본값으로, element 를 원래의 순서대로 위치시킴
+            - position: fixed;
+                - element 를 브라우저 window에 상대적으로 위치시킴
+            - position: relative;
+                - element 를 보통의 위치에 상대적으로 위치시킴
+            - position: absolute;
+                - element 를 절대 위치에 위치시킴
+                - 기준은 첫번째 상위 element
+        - 가로, 세로 길이
+            - width, min-width, max-width
+            - height, min-height, max-height
+        - Flexbox
+            - flex container가 flex item(element)를 관리하는 구조
+            - flex-direction
+                - row : 기본값이며 아이템을 행(row)을 따라 가로 순서대로 왼쪽부터 배치
+                - column : 아이템을 열(column)을 따라 세로 순서대로 위쪽부터 배치
+                - row-reverse : 아이템을 행의 역방향으로 오른쪽부터 배치
+                - column-reverse : 아이템을 열의 역방향으로 아래쪽부터 배치
+            - align-items
+                - stretch : 기본값이며 아이템을 늘려서 컨테이너를 가득 채움
+                - flex-start : cross-axis 의 시작 지점으로 아이템을 정렬
+                - center : cross-axis 의 중앙으로 아이템을 정렬
+                - flex-end : cross-axis 의 끝 지점으로 아이템을 정렬
+                - baseline : 아이템을 baseline 기준으로 정렬
+            - justify-content
+                - flex-start : main axis 의 시작 지점으로 아이템을 맞춤
+                - center : main axis 의 중앙으로 아이템을 맞춤
+                - flex-end : main axis 의 끝 지점으로 아이템을 맞춤
+                - space-between : main axis 를 기준으로 첫 아이템은 시작 지점에 맞추고, 마지막 아이템은 끝 지점에 맞추며, 중간에 있는 아이템들 사이의 간격이 일정하도록 맞춤
+                - space-around : main axis 를 기준으로 각 아이템의 주변 간격을 동일하게 맞춤
+
+- Font와 관련된 속성
+    - font-family
+        - 글꼴을 선택하는 속성
+        - 여러 개의 글꼴을 선택하여, 여러 브라우저에서 대응될 수 있는 대비책들을 지정할 수 있음
+        - Generic font family
+            - serif : 각 글자의 모서리에 작은 테두리를 갖고 있는 형태의 글꼴
+            - sans-serif : 모서리에 테두리가 없이 깔끔한 선을 가진 글꼴
+            - monospace : 모든 글자가 같은 가로 길이를 가지는 글꼴
+            - cursive : 사람이 쓴 손글씨 모양의 글꼴
+            - fantasy : 장식이 들어간 형태의 글꼴
+    - font-size
+        - 글꼴의 크기를 선택하는 속성
+            - px
+            - em
+            - rem
+            - vw (viewport width)
+    - font-weight
+        - 글자의 두께를 선택하는 속성
+    - font-style
+        - 글꼴의 스타일을 지정하는 속성
+            - normal : 일반적인 글자의 형태
+            - italic : 글자가 기울어진 형태 (기울어진 형태의 글자를 직접 디자인한 것)
+            - oblique : 글자가 비스듬한 형태 (그냥 글자를 기울인 것)
+
+- 기타 많이 사용되는 속성
+    - backgroundColor : 배경색을 선택하는 속성
+    - border : 테두리에 관련된 색상
+
+- styled-components
+    - usage
+        - tagged template literal
+            - literal : 소스코드의 고정된 값 -> e.g., var t = 10;의 '10'이 literal
+            - template literal : literal을 템플릿 형태로 사용하는 JS 문법
+            - untagged vs. tagged
+                - untagged : template literal을 사용하여 단순한 값
+                - tagged : template literal의 값을 태그에 매핑시키는 것
+        - styled-components의 props 사용하기
+            - props를 통해 component 간의 specialization 가능
+        - styled-components의 스타일 확장하기
+            - 미리 styled.tag로 styled-component를 정의
+            - 확장하여 사용할 컴포넌트는 styled('styled-component')로 확장
